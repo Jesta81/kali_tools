@@ -1,0 +1,22 @@
+Source: snmpcheck
+Section: utils
+Priority: optional
+Maintainer: Kali Developers <devel@kali.org>
+Uploaders: Mati Aharoni <muts@kali.org>,
+           Devon Kearns <dookie@kali.org>,
+           Raphaël Hertzog <buxy@kali.org>,
+           Sophie Brun <sophie@offensive-security.com>,
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: https://www.nothink.org/codes/snmpcheck/index.php
+Vcs-Git: https://gitlab.com/kalilinux/packages/snmpcheck.git
+Vcs-Browser: https://gitlab.com/kalilinux/packages/snmpcheck
+
+Package: snmpcheck
+Architecture: all
+Depends: ${misc:Depends}, ruby, ruby-snmp,  perl, libnumber-bytes-human-perl, libnet-snmp-perl
+Description: SNMP service enumeration tool
+ Like to snmpwalk, snmpcheck allows you to enumerate the SNMP
+ devices and places the output in a very human readable
+ friendly format. It could be useful for penetration testing
+ or systems monitoring.

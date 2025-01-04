@@ -1,0 +1,51 @@
+snmpcheck (1.9-0kali2) kali-dev; urgency=medium
+
+  [ Raphaël Hertzog ]
+  * Update Maintainer field
+  * Update Vcs-* fields for the move to gitlab.com
+  * Add GitLab's CI configuration file
+  * Configure git-buildpackage for Kali
+  * Update URL in GitLab's CI configuration file
+
+  [ Sophie Brun ]
+  * Update packaging
+
+ -- Sophie Brun <sophie@offensive-security.com>  Fri, 15 Jan 2021 14:28:08 +0100
+
+snmpcheck (1.9-0kali1) kali-dev; urgency=medium
+
+  * Import new upstream release: upstream rewrote the project in ruby
+  * Update all debian files
+
+ -- Sophie Brun <sophie@offensive-security.com>  Fri, 22 Jul 2016 14:09:23 +0200
+
+snmpcheck (1.8-1kali4) kali-dev; urgency=medium
+
+  * Renane /usr/bin/snmpcheck into /usr/bin/snmp-check as
+    it conflicts with the "snmp" package otherwise.
+
+ -- Raphaël Hertzog <buxy@kali.org>  Sat, 09 Aug 2014 14:16:27 +0000
+
+snmpcheck (1.8-1kali3) kali; urgency=low
+
+  * Patched to display the right filename for usage output
+
+ -- Devon Kearns <dookie@kali.org>  Thu, 27 Mar 2014 13:42:28 -0600
+
+snmpcheck (1.8-1kali2) kali; urgency=low
+
+  * Updated watch file
+
+ -- Mati Aharoni <muts@kali.org>  Sun, 12 Jan 2014 16:06:15 -0500
+
+snmpcheck (1.8-1kali1) kali; urgency=low
+
+  * Added a man page contribued by loneferret
+
+ -- Devon Kearns <dookie@kali.org>  Thu, 21 Mar 2013 10:29:35 -0600
+
+snmpcheck (1.8-1kali0) kali; urgency=low
+
+  * Initial release
+
+ -- Devon Kearns <dookie@kali.org>  Fri, 28 Dec 2012 07:40:37 -0700

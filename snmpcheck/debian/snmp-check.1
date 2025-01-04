@@ -1,0 +1,56 @@
+.TH SNMP-CHECK 1 "July 22, 2016" "1.9" "SNMP Enumerator"
+.SH NAME
+snmp-check - SNMP device enumerator
+.SH SYNOPSIS
+snmp-check [options] [target IP address]
+.SH OPTIONS
+-p, --port : SNMP port; default port is 161;
+.br
+-c, --community: SNMP community; default is public;
+.br
+-v, --version : SNMP version (1,2c); default is 1;
+.br
+-w, --write : detect write access (separate action by enumeration);
+.br
+-d, --disable_tcp : disable 'TCP connections' enumeration!
+.br
+-t, --timeout : timeout in seconds; default is 5;
+.br
+-r, --retries : request retries; default is 1;
+.br
+-i, --info : show script version;
+.br
+-h, --help : show help menu;
+.br
+.SH DESCRIPTION
+snmp-check allows you to enumerate the SNMP devices and places the output 
+in a very human readable friendly format. It could be useful for penetration 
+testing or systems monitoring.
+.SH EXAMPLE
+.TP
+.B
+Query private community string
+snmp-check -c private 192.168.1.1
+.TP
+.B
+Query SNMPv2
+snmp-check -v 2c 192.168.1.1
+.TP
+.B
+Query changing timeout
+snmp-check -t 40 -c private 192.168.1.1
+.SH SEE ALSO
+snmpcmd(1), snmpbulkwalk(1), snmpwalk(1), snmptest(1)
+.SH AUTHOR
+Matteo Cantoni
+.SH NOTES
+Homepage
+.br
+.B 
+http://www.nothink.org/codes/snmpcheck/
+.SH COPYRIGHT
+Copyright (c) 2005-2015 by Matteo Cantoni
+.br
+Distributed under GPL license.
+.br
+http://www.gnu.org/licenses/

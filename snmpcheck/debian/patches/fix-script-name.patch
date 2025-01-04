@@ -1,0 +1,11 @@
+--- a/snmpcheck-1.9.rb
++++ b/snmpcheck-1.9.rb
+@@ -55,7 +55,7 @@ trap("SIGINT") { exit! }
+ # disable verbose
+ $VERBOSE = nil
+ 
+-script_name        = 'snmpcheck.rb';
++script_name        = 'snmp-check';
+ script_version     = 'v1.9';
+ script_description = 'SNMP enumerator';
+ script_copyright   = 'Copyright (c) 2005-2015';
